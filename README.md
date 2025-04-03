@@ -1,6 +1,13 @@
 # pb-sync (Pocketbase Sync)
 A command line tool to sync data between two Pocketbase instances.
 
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Using stdin Input](#using-stdin-input)
+  - [Using Environment Variables](#using-environment-variables)
+
 ## Features
 - Downloads a backup from the source Pocketbase instance
 - Uploads the backup to the target Pocketbase instance 
@@ -13,10 +20,17 @@ A command line tool to sync data between two Pocketbase instances.
 2. Run `npm install` to install dependencies
 3. Create a `.env` file (optional) with your credentials
 
+## Usage
+
+> [!CAUTION]
+> All data inside target instance will be lost and replaced with the data from source instace
+
+> [!IMPORTANT]  
+> You need superuser account for both source and target instances.
 
 ### Using stdin Input
 - Run `npm run start` to start using the tool
-- input the credentials as prompted and wait for the tool to download, upload and restore the data.
+- Input the credentials as prompted and wait for the tool to download, upload and restore the data.
 
 ### Using Environment Variables
 Create a `.env` file with the following variables:
