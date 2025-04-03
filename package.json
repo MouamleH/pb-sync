@@ -1,0 +1,31 @@
+{
+  "name": "pb-sync",
+  "version": "1.0.0",
+  "description": "Pocketbase database migrate & restore between two instances",
+  "keywords": [
+    "pocketbase",
+    "pocketbase migration",
+    "pocketbase sync",
+    "pocketbase migrate",
+    "pocketbase restore"
+  ],
+  "license": "MIT",
+  "author": "Mouamle (mouamle.hasan@gmail.com)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "bin": {
+    "pb-sync": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MouamleH/pb-sync.git"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "pocketbase": "^0.25.2"
+  }
+}
