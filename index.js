@@ -60,8 +60,7 @@ try {
     console.log("Waiting for target instance to start...");
     await waitForInstance(target);
 
-    // Clean up target backup
-    await deleteBackup(target, backupName);
+    console.log(`Delete the backup file manually on target instance wthen the restore is done: ${backupName}`);
 
     console.log("Sync completed successfully");
     process.exit(0);
